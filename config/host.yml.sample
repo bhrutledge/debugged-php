@@ -1,0 +1,7 @@
+# TODO: Prefixes
+web_domain: 'framework.dev'
+web_base: '/'
+smarty_dir: '/Users/brian/Sites/framework/smarty'
+smarty_compile_dir: '/Users/brian/tmp/framework/templates_c'
+smarty_cache_dir: '/Users/brian/tmp/framework/cache'
+

@@ -1,0 +1,22 @@
+-
+    url: 
+    id: home
+    title: Home
+    pages:
+        -
+            slug: sample
+            title: Sample
+        -
+            slug: section
+            title: Section
+            grouping: true
+            contents:
+                -
+                    slug: part-1
+                    title: Part 1
+                -
+                    slug: part-2
+                    title: Part 2
+        -
+            slug: sitemap
+            title: Site Map

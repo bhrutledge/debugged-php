@@ -1,0 +1,148 @@
+html {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+body {
+    font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode",
+                 "Bitstream Vera Sans", "DejaVu Sans",
+                 sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+div {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+p, blockquote, pre, 
+ul, ol, li, dl, dt, dd {
+    border: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+table {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-collapse: separate;
+	border-spacing: 0;
+    text-align: left;
+}
+
+th, td {
+    padding: 0 1em 20px 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+td:last-child {
+    padding-right: 0;
+}
+
+tr:last-child th,
+tr:last-child td {
+    padding-bottom: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    display: inline;
+    margin: 0;
+    padding-right: 1em;
+}
+
+.catalog {
+    list-style: none;
+}
+
+.catalog > li {
+    min-height: 240px;
+    padding-left: 240px;
+    position: relative;
+}
+
+.catalog > li img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.sitemap ul {
+    margin-top: 20px;
+}
+
+.sitemap li li {
+    margin-left: 2em;
+}
+
+/* NAVIGATION */
+
+#breadcrumb-nav {
+    background-color: #EEEEEE;
+    float: left;
+    font-size: 11px;
+    padding: 0 1em;
+}
+
+#breadcrumb-nav li:before {
+    content: ">";
+    padding-right: 1em;
+}
+
+#footer-nav {
+    background-color: #EEEEEE;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 1em;
+}

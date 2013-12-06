@@ -1,0 +1,23 @@
+# Web root: 
+# Local root: /Users/brian/Sites/framework
+
+Options -MultiViews
+
+RewriteEngine on
+
+RewriteRule ^data|config|includes|smarty - [F,L]
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^.+ - [L]
+
+RewriteCond /Users/brian/Sites/framework/$1.php -f
+RewriteRule ^(.+?)/? $1.php [L]
+
+RewriteCond /Users/brian/Sites/framework/smarty/templates/pages/$1.tpl -f [OR]
+RewriteCond /Users/brian/Sites/framework/smarty/templates/pages/$1 -d
+RewriteRule ^(.+?)/?$ default.php?page_url=$1 [L]
+
+RewriteRule ^$ default.php [L]
+
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
